@@ -8,6 +8,11 @@ module.exports = {
       url: '/dist'
     }
   },
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: 'es2018',
+  },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
